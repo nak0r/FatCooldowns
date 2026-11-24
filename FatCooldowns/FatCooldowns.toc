@@ -1,0 +1,45 @@
+## Interface: 30300
+## Title: FatCooldowns
+## Notes: Tracks, transmits and displays the cooldowns of your raid.
+## Author: tsigo (RaidCooldowns) + Fatline (FatCooldowns) + Idan + Shekles
+## Thanks: Vendethiel (GladiusEx)
+## SavedVariables: FCD_DB
+## Dependencies:
+## OptionalDeps: Ace3, LibSharedMedia-3.0, LibBars-1.0
+## X-Embeds: Ace3, LibSharedMedia-3.0, LibBars-1.0
+
+#@no-lib-strip@
+#@end-no-lib-strip@
+
+embeds.xml
+Externals\UTF8\utf8data.lua
+Externals\UTF8\utf8.lua
+
+locale\enUS.lua
+locale\esES.lua
+locale\koKR.lua
+locale\zhCN.lua
+locale\zhTW.lua
+
+# Base
+FatCooldowns.lua
+Cooldowns.lua
+ModuleBase.lua
+classes\DeathKnight.lua
+classes\Druid.lua
+classes\Mage.lua
+classes\Hunter.lua
+classes\Paladin.lua
+classes\Priest.lua
+classes\Rogue.lua
+classes\Shaman.lua
+classes\Warlock.lua
+classes\Warrior.lua
+
+# Display
+ExtraData.lua
+Display.lua
+Config.lua
+SpellsUpdate.lua
+Chat.lua
+AltDungeon.Lua

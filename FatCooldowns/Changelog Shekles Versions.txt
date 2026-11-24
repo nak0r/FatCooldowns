@@ -1,0 +1,1200 @@
+v51
+fixed bugs and changes to existing code:
+	fcdde does not check auc price for soulbound items
+	auto roller does not check auc price for soulbound items
+	tabs for chat highlighter
+	fcdmount,de,extra made locals
+	code to remove renamed players e.g. C_18484545
+	raid info name in inspect frame
+	sendmessage code battleground for none eng client
+	scan for tank cds, needs more work
+	instance check for portals, fish, remote, distiller
+	raid warning added to spammer
+	restock regents for none eng clients
+	fix stack sizes for auto buy
+	added message back in for spell ready in sound and reporter
+	fix auto buy error when removing item
+	auto buy limit 200 to 500
+	change yes no to yes - bop only and no - boe only
+
+added:
+	need, pass and greed icons
+	auto roller:
+		ilvl: above, below
+		bind: both, yes, no
+	hide frames in combat
+	horn of winter
+	new lib and boss items in ar
+	
+v50
+fixed bugs and changes to existing code:
+	spells being added to bars when in raid that should not be there aka tot in ony/tbc
+	more changes to custom sendchatmessage
+	tot remove now checks maxhp > 46000 out icc or 46000 * 1.3 in icc, will check for buffs rf fp too
+	druid will no attck power showing for all in inspect frame
+	spammer button to sent message and reset the timer
+	spammer changing channel e.g. global was changing to lfg
+	fix wintergraps hide and fcd mount code
+	removed a lot of old code
+	inspect frame color has and missing
+	fix remove tot code
+	fix pi sound and report when player has talents to reduce cd
+	changed channel options config
+	split glyphs in inspect frame
+	changed aura code for pets
+	whisper block code 
+	started spliting code for module modes
+	changed alt tab code
+	magic char code added to custom chat filter
+	changed fcdanylink code
+	chatEvents for custom chat menu blocker
+	players Role in messages
+	combat check for poisons tbc/vanilla
+	removed posions check for spells in tbc/vanilla
+	toggle for magic in fcd chat filter menu
+	chat filter when disabled does not reset print message channle
+	bug when disabling a spell - bas
+	custom chat filter reporter now works with bubbles
+	lock tooltip bug tbc
+	fixed a bug in chat filter
+	fcdde now works with auctionator
+	seen in fcdde works correctly now
+	trader now has higher lvl drinks and food
+	BQL: Remove Salv fixed
+	rapid fire cd
+	fish spam
+
+added:
+	prof icons
+	hide in wintergrasp
+	spell rank checker
+	inspect frame
+		cooking
+		raid info
+		hit
+		def
+	chat filter FCDGroupPlayer and case sensitivity option
+	chat menu to add message to custom chat filter
+	chat menu bubbles
+	custom print tabs
+	include pvpg in screenshot death 
+	chat filter global raids
+	cd add:
+		earth shock
+		Arcane Bomb
+		Super Sapper Charge
+
+v49
+fixed bugs and changes to existing code:
+	spell reporter rogue tot
+	fix racer from devo and works in party now too
+	hunter/pet cd time with dm talent
+	change code to back old way, spell sound and spell reporter again req bars
+	code for chicken proc
+	aura tooltip info code
+
+added:
+	prefix for most reports
+	spammer alt to auto flood
+	/fcd ver -- check /fcd help
+	/fcd download -- check /fcd help
+	item/spell/achiv icons added for chat
+
+v48
+fixed bugs and changes to existing code:
+	autogear code for dw spec when you hae 2h equpited
+	whispers block timers
+	autoroller no more delay when at 0
+	autogear max lvl
+	libhooker added
+	fix max lvl for ony server
+	spell order not working on load
+	a lot of config code
+	tabs for spell sounds
+	tostring for a lot of getspellinfo
+	border fix
+	code to stop keep trying to load failed items 
+	Ectoplasmic Distiller fix reporter
+	inspect low lvl items range
+	code for channel in spellreporter
+	changed cd time code for spell reporter and spell sound, no longer need bars for it to work
+	raid log from 500 to 50, may increase but 500 was way too much
+	raid log was tracking bgs
+	
+added:
+	solo mode to stop bars being removed when leaving groups
+	spells reporter
+	inv and assit - auto inv guild chat
+	Crashin' Thrashin' Racer Controller reporter
+	
+v47
+fixed bugs and changes to existing code:
+	code for sendaddoncommand
+	hunter talents for spells
+	remove hop code
+	code for hunters talent to reduce cd
+	unholy dk amy fix reduce cd
+	more code for class colors in blocked whispers
+	warning for friends in group is now default off
+	md cd for ony
+	already known code for warlock pet spells
+	guildinv button fix convert to raid
+	ony polearm location 
+	extra code to blocked whispers
+	cd/talent changes for cooldowns
+	fcdmount code
+	reply timer for whispers
+	removed option to edit auto replay whisper
+	soulstone code/aura id to spellname
+
+added:
+	druid indoors one click to fcdmount
+	invite blocker/ auto decline invites from players below set lvl - in auto confirm 
+	confirm window added to ignore for ignore and friends
+	ignore notes will now show in ignore window
+
+v46
+fixed bugs and changes to existing code:
+	remove buff for ldw mc
+	error with print price for trashmanager
+	aura info error
+	vdw double message and report on boss stacks
+	disabled salv tracking for vinila
+	combat check for fcdmount
+	removed raid log info, class info and chat history from All in export/import settings
+	tot remover on rogue
+	more code change for translate
+	spellslvl for tbc version
+	auto gear auto check druid tank
+
+added:
+	import/export settings
+	Auto Ready Check delay
+	autoroller delay
+
+v45
+fixed bugs and changes to existing code:
+	few inspectframe errors
+	inspectframe for undead
+	changed custom class checker code
+	5 sec timer for every part of whisper blocker
+	changed dispel timer for 0.01 sec
+	total sell print added to trashmanager
+	guild inv button repeating inv/message
+	auto confirm code
+	mass dispel code for dispeller
+	spam blocker for portal reporting
+	portal reporting now has start and end options
+	disple reporting message
+	whisperblock message table
+	autogear 2h fury
+
+added:
+	hide bar background
+	print for auto confirm
+
+v44
+fixed bugs and changes to existing code:
+	extradata error
+	retrieving item information for inspect window
+	rescan dropped from 5 sec to 0.5 sec for inspect window
+	you can now report with inspect frame
+	summary added to inspect frame
+	automailer will now detect when trying to send mail to other faction and will no longer try to send mail to that person when on the wrong faction
+	ag dk item weight error
+	inspectframe enable button
+	block whispers now has custom message, a log of blocked message, will no longer blocks gm messages, a white list of people to not block 
+	guild inv button now is on a timer with more messages
+	key word auto invite now matchs the words and not finds them
+	massive changes to code for locale, just got the addon working better with other languages and not translated everything
+	pi and soul stone cds
+
+added:
+	bank move
+	inspect frame low level enchants
+
+v43
+fixed bugs and changes to existing code:
+	AG Tooltip changed to allow single or all
+	AG stats changed
+	dup messages blocking all
+	[Gnomish Battle Chicken] and [Arclight Spanner] added to dont sell white item list for trashmanager
+	trashmanager will no longer sell/delete white items with gems/enchants
+	Recipe added to trashmanager
+	autogear not checking if replaced item should replace other item
+	autogear code for ranged weapons
+	fix auto confirm code
+	Expertise code for 1h weapons in ony server, ag
+	dps for hunter weapon, ag
+	Miscellaneous added to white item black list, trashmanager
+	proc check for ag stats
+	price and stack added to print for trash manager
+	fireworks event timer
+	auto confirm code
+	extra table for unarmed and rogue poisions, spellslvl
+	
+added:
+	inspect
+
+v42
+fixed bugs and changes to existing code:
+	Polearms location not showing in spells
+	changed auto confirm code
+	changed some autogear code, bind and loot recived
+	fixed friends being blocked in chat whispers even when allowed friends was enabled
+	fixed alt guilds code in chat whispers
+	color names code
+	poisons code in spells
+	fix spells print
+	experience added into autogearer
+	re worked autogearer code
+	fcdmount should work on ony
+	trashmanager items has been reset to allow for a better list, a list that allows for specific stats, enchants, gems and so on
+	framestra order/stacking
+	chat whispers will block messages when you reload/relog with chat history enabled
+
+added:
+	AutoGearer in tooltip
+	who added to chat whsipers
+	people you messaged added to chat whispers
+
+v41
+fixed bugs and changes to existing code:
+	stone and pick lock added to trader buttons in trade window
+	changed Aspect of the Pack daze report code
+	moved chat history
+	VDW lose stacks code
+	chatfiler config order
+	moved autobuy
+	incresed config size
+	made seperators smaller
+	changed item functional check to check all stats
+	more code for warlock pet tomes
+	spellslvl code search blocking print
+	config bug on spellslvl code for warlock
+	trashmanager code to prevent deleting white items when option is not enabled
+	mana tide rank 2/3 showing when you dont have rank 1 in spells 
+
+added:
+	chat whispers
+	same chat message filter for global
+	added extra check for learnt tomes on warlock, shows in tooltip
+
+v40
+fixed bugs and changes to existing code:
+	fcdbacklash chat filter error 
+	boss screenshot working when disabled
+	sindra flashscreen
+	portals reporter can now accounce or warn, you will need to re-enable this
+	Infernal Spear reporter spelling mistake
+	auto ml looter and auto loot change spelling mistakes for rs
+	displler now has ask for dispel 
+	quest items in autosell/destory list should now work
+	trashmanager now counts the current stack price
+	should work better with Onyxia server
+	fixed players target icon being removed
+	max count for raid logs
+	changed spells code
+	fcdmount now works for ghost wolf 
+	fcdmount powershift aka one click works for travel form and ghost wolf
+	tooltip for fcd sell list button
+	servers option for autobuy
+	
+added:
+	RS flashscreen
+	print learnable spells in chat when you lvl
+	trader
+
+v39
+fixed bugs and changes to existing code:
+	icc marks will show in loot timers for real this time
+	changed print last target to report last target, sends to raid/party chat, note how accurate this is will need to be tested
+	ml looter instance limiter
+	not hiding ui without delay on screenshot
+	you can now change the number for fish reporter
+	aura info bug with glyphs
+
+added:
+	auto screenshot
+	Dispeller
+	portals reporter
+	flash screen for Sindra bombs (both on and not on you), BQL shadows, PP Ooze
+	Infernal Spear reporter
+	dreamwalker drop stacks reporter
+	
+v38
+fixed bugs and changes to existing code:
+	changed defualt AM to full name
+	AM now works for other players not just you
+	fixed tank only cds
+	link loot timers to raid chat
+	fixed re-make raid
+	Filthy Tricks talent checker
+	icc marks will show in loot timers
+
+added:
+	raid logs to remake raids
+	emote to chat filter
+
+v37
+fixed bugs and changes to existing code:
+	chat highlighter link names are now coloured
+	table sorting
+	report message to print if not in party/raid
+	button click print last target now works
+	extra code in trash manager to not delete quest items
+	class check for player role for mass whisper
+	de vendor price check
+	changed disable clicks to allow removal of bars
+	remove STR from rogue unfit
+	
+added:
+	chatbubble icons
+	LK healer grabbed icons
+	aura mastery display type
+	loot timers
+	de weapon and armour limiter options
+	auto mail weapon and armour limiter options
+	trash manager auto sell inequitable unfit items, e.g. spell power on warr 
+
+v36
+fixed bugs and changes to existing code:
+	controlled code
+	alpha range code to hide missing spaces
+	moved custom chat filter to own tab
+	remove auto lower case for custom chat filter
+	aura info code
+	warn when in party/raid color name
+
+added:
+	bubbles and raid warning frame added to custom chat filter
+	buff removal
+	player roles added to messenger
+	chat history
+	disenchant
+	ilvl to automail
+	change priority on autoroll
+	disenchant options in autoroll
+
+v35
+fixed bugs and changes to existing code:
+	auto promo errors
+	chatbubbles code
+	gold message filter ids
+	friend and ignore share code
+	chathook code
+	holding shift will stop autobuy
+	temptable for unitclass
+	chat highlighter min letters
+	fix pet flash screen
+	customsounds path
+	amchecker bug
+	changed aura soruce to aura info
+	
+added:
+	Range Alpha
+	chat highlighter loot/system links
+	spell and item id added to aura soruce and some talent/glyph info for some spells
+	controlled for when someone is interupted or cc
+	reporter daze with aspect 
+
+v34
+fixed bugs and changes to existing code:
+	spelling mistakes
+	chat highlighter code
+	fcdmount oculus
+	fcdmount ground order
+	chat reporter bubbles error
+	code for elvui chat bubble filter
+	pala am now shows the aura type
+	bug with auto promote
+	/fcd button hidden fix
+	
+added:
+	chat filter gold share system messages party/raid
+	auto buy
+	remove tot proc when used on rogue option
+
+v33
+fixed bugs and changes to existing code:
+	fix more bugs with ignore and friends
+	fix unable to remove some items from auto masterloot and autoroller loot list
+	icons to fcdmount lists
+	font ui changed
+	updated a few libs
+
+added:
+	nothing
+
+v32
+fixed bugs and changes to existing code:
+	fix more bugs with ignore and friends
+ 	split ginv and disban button options
+ 	split only icc and rs and added more options
+
+added:
+	nothing
+	
+v31
+fixed bugs and changes to existing code:
+	fixed loot changer bug
+	fix more bugs with ignore and friends
+
+added:
+	delay timer for loot changer and group loot threshold added
+	target names to icon control
+
+v30
+fixed bugs and changes to existing code:
+	spells code
+	ignore and friend share crash bug
+	auto mailer will now reset the send mail name after sending mail 
+	fcd mount changes
+
+added:
+	nothing
+	
+v29
+fixed bugs and changes to existing code:
+	auto mail not soulbound equiptment
+	auto delete food and scrolls
+	neck, finger, trinket off hand and back added to items list
+	delete/selling food/scroll overlapping setting
+	does not delete items when at ah
+	name change of keep icons to icon control
+	lower messager list from 30 to 25
+	test button
+	auto roller changed with tons of new settings
+	more borders, backgrounds and sounds
+	moved flash screen inside personal
+	guild inv message edit
+	lay on hands glyph and talent check
+
+added:
+	food range
+	auto sell white equiptment
+	spellbook
+	auto delete in trash manager
+	friends and ignore share list
+	anchor options
+	low hp and mana flash screen with sound
+	error filter
+	ldw flash screen on spirits
+	random mount
+
+	icon control options:
+		in raid
+		not in raid
+		boss fight
+		not in boss fight
+		players target:
+			tank
+			dps
+			healer
+			hostile
+
+V28
+fixed bugs and changes to existing code:
+	trigger for event Kalu'ak Fishing Derby when you receive loot
+	spelling mistakes
+	none added to auto assist and inv
+	fixed RS and ICC only for loot changer
+	changed table system and sorting order for blacklists, trash manager, mailer 
+	alt tabber now does not set sound in combat
+	border code
+	auto master looter changed to a new style and more options added
+	backdrop changed
+	whisper message timer
+	mailer code
+	print code for icons
+	FCD: sell button and config code
+	defile flash screen trigger when not enabled
+	
+added:
+	auto equip goblin rocket pack
+	not inside bg added for messagener
+	border color
+	set loot threshold for master loot changer
+	auto mailer send unbound equipment
+	auto confirm popup
+
+V27
+fixed bugs and changes to existing code:
+	spell removeal code
+	class color names and icons
+	alt tab code
+	death knights spell sounds
+	code for lower rank spells
+	custom chat filter ignore caps
+	auto master looter in rs and icc code
+	color raid icons and added icons
+	color player names for select player name options
+	keep icon (none) will now remove icons from players
+	added player to keep icons, master looter and icon stacking
+	current ilvl in roller
+	trash manager dc when deleteing 3+ unsellable items
+	chat highliter code
+	keep icon timer changed from 1 to 0.2
+	trash manager will not delete items when at mailbox
+	more config layout changes
+
+added:
+	enable/disable all buttons
+	messagner
+	auto mailer
+	flash screen
+	hide in raid or when not in raid
+	expose armor reporter
+	event reminder
+	minimap icon
+	trash manager auto sell un-equpiable soulbound items
+
+V26
+fixed bugs and changes to existing code:
+	profiles options added to /fcd config window
+	alt tab extra code
+	highlighter code
+	custom player check for backup cd
+	moved hide/show into each frame
+	reset spells when enter arena
+	spell labling 
+	custom name color
+
+added:
+	show only in arena
+
+V25
+fixed bugs and changes to existing code:
+	titles for chat filter reporter now only show when an option is selected
+	raid browser button overlapping
+	item description
+	spelling mistakes
+	reporting of events not in eventfilter
+	remove print message
+	hide in pvp removed
+	removed old item selling
+	changed config ui look
+	checking for max rank on some spells
+	
+added:
+	receives loot rw chat filter
+	hide in bg
+	hide in arena
+	bag manger added (new item selling)
+	word highlighter with sounds
+	highlight players names
+	custom chat filter
+	alt tab
+	search items and spells
+
+V24
+fixed bugs and changes to existing code:
+	md/tot error
+	spell icon animation
+	changed color names
+	disband raid button
+	guild inv button
+	char length fixed and can now color names below max(12)
+	12 is now 99 for char length
+	only enemy and only friendly
+	back up trigger target
+	vehicle check for pet charge and backup trigger
+	battleground info check added for custom player and custom class checks
+	extra code for backup trigger
+	missing settings code
+	checks for when players was renamed in pvp
+	removedbw proc spelling
+	more code for sorting
+	disable click reporting for other bars
+	discription fix
+	PhoenixStyle chat filter now has lady spirirts blocked, in fight only
+	eventfilters
+	pet checking for some options
+	chat bubble blocking self message when asking for innervate or out of comabt messages on the list
+	chat filter fixs and added better reporter options
+
+added:
+	change target location
+	str/skin totem reporter
+	EnsidiaFailsSpam chat filter
+	only icc and rs for auto change loot
+	chat filter DoTimer, FlasknFood, ReadyCheckMessages 
+	auto assist
+	rank for guild inv button
+	item proc bars
+
+
+
+V23
+fixed bugs and changes to existing code:
+	raid and party auto roll
+	shield wall scan for glyph and talent
+	auto change master and group loot
+	auto sell will not check max price
+	necro reporter cloak with debuff
+	removed seal of command from DBS
+	fixed PP icons filter
+	changed auto group loot timer to 40 sec from 20
+	sync settings changed
+	necro timer backup code 
+
+added:
+	border thickness
+	/fcd removedbw to remove DBW procs for mounting
+	custom bar background and name color
+	custom master looter window version 1 and 2
+	auto loot when master looter
+	global chat filter
+		guild, spam, buying/selling, arena, tmog, not eng
+	guild inv button
+	disband raid button
+	badges bar
+	avg ilvl option for auto roll
+	icon animation and reverse
+	combat hide tooltip and show when holding shift
+	background color changer
+	tank auto remove Divine Shield in boss fight
+	custom sounds
+
+V22
+fixed bugs and changes to existing code:
+	border placement 
+	changed interface button name
+	more code for talent scan to prevent remove of bars when fail on scan is returned for talents
+	remove print messages used for testing
+	class color some self print messages
+	changed default clicks
+	right click anchor show config showing extra menu
+	left to right border code
+	added monster say to NPC bubbles
+	input for Valk and frostmourne icons
+	input for keep icons on player
+	keep icon spam
+	unknown time for necro
+	sindra parry for pets
+
+added:
+	chat filter icons on pp fight
+	default clicks button
+	auto delete ldw failed quest
+	spec option in sounds
+	copy frame settings
+	auto roll greed,need,pass,de on loot
+	auto delete when low bag space and sell to vendor
+	
+V21
+fixed bugs and changes to existing code:
+	tot/md failed/remove change to show target name e.g. Caster (Target) R / Caster (Target) F
+	fixed double md +
+	click bars message changed for new failed and remove on tot/md
+	md tot fail, would only show once
+	healer grabbed moved into valk bars scanner bars
+	valk grabbed now shows targets even when dbm does not
+	valk bars sorting
+	necro code works with bars for more accurate time
+	names for necro dispel if priest dispel over time effect
+	changed necro bar name
+	necro jump to
+	targeting code changed again
+	more code for removal 
+	bpc knocks
+	ask for innervate now checks if there is a druid in the raid
+	backlash chat filter bubble and ice block
+	double spell sound play on spell ready
+	lady weapon managemnt will not longer equip dps weapons when your tanking or healing
+	holy priest added for grabbed say and sound
+	button clicks changed none is default 
+	correct time for pain sup
+	changed raid scan
+	disable ask for innervate on Valithria Dreamwalker and if your a druid
+	sorted chat filter bubbles code
+	changed parry counter code 
+	rs failed to move out report to raid and not self
+
+added:
+	report to self option in other tab
+	message to raid with list of who has the spell on cooldown
+	keep icon on player
+	removal buff checker
+	scan for old talents/items removal
+	self reporting for parry
+	button clicks options
+	border option
+	about tab 
+	auto group/master loot
+	new cds and sounds:
+		shaman shields
+		Killing Machine
+		DeathChill
+		Freezing Fog
+		path of frost
+		focus magic
+		hot streak proc
+		pushing the limit
+		icy veins
+		remove curse
+		frost nova
+		Death Coil
+		Banish
+		Curse of the Elements
+		Masters Call
+		Scare Beast
+
+V20 -- nothing miss labeled last version, v19 and v20 are the same
+
+V19
+fixed bugs and changes to existing code:
+	LDW remove buffs only when MC is cast on you
+	BPC knock split tank and healers code and added more spec checking code
+	sounds not playing when a talent CD scan was done
+	changed checking for block reporter
+	target for pet spells
+	unequip weapon on death in LDW fight
+	pet owners name to parry reporter
+	old code added tons of resets to help prevent false reports
+	changed sort order name
+	targeting system changed
+	chat filter parry hasted attack
+	changed tank only cooldown code
+	class color when scan for talents and raid new player
+	changed remove spark and icon code
+	updating settings code
+	options config
+	priest pet CD
+	changed spell "used" message
+	chat filtered names are now links
+	sorted config code
+	spell descriptions
+	multiple sounds playing when your tracking the same spell in multiple bars
+	changed stopcooldown code
+	increase time for PARRY HASTED attack
+
+added:
+	auto remove Wisp Costume
+	BPC knock self
+	fillbars
+	fill background
+	add bars and sound for
+	LK debuff - removes when dispels
+	sham enrage - removes when dispels
+	player class to sounds
+	parry counter for Sindra and Hailon
+	BPC reporter pet charge
+	spell icons in config
+	new sort order and direction
+	code to update sorting more often
+	windfury totem reporter when you have FDK in raid
+	hide label
+	label spell name
+	scan for missing settings to avoid errors
+	enemy and friendly only
+	tot cancel threat
+	aura removal
+	Valk grabbed - removed when dropped
+	tank remove hop on boss fight
+	CDs add
+		Life Tap
+		Demonic Pact
+		Holy Shock
+		Judgment of the Pure
+		Avengers Shield
+		Hammer of the Righteous
+		Tigers fury
+		Eclipse
+		Natures Grace
+		Bloodrage
+		Hurricane
+		Fan of Knives
+		Mind Sear
+		Blizzard
+		PVP trinket
+
+v18
+fixed bugs and changes to existing code:
+	fixed timer for say ask for inner
+	backup trigger for LDW weapon management
+	fixed stealing bite spam
+	FF COTE finally fixed with anti spam only prints once per wave
+	change time format
+	seal of command added to BPC whoring
+	changed code for item links
+	changed BPC knock reporter
+	rs id req for all rs reporting and added death with debuff reporting
+	fixed disable deepscan and custom check if player
+	changed a lot of old code again 
+	fixed some code with chat filter messages
+	pet cds will now work solo or in party
+	fixed sacred shield and last stand scan for talent id for cd
+	change spec change and backup trigger
+	removed -DKP from ress it will just show target
+	shared cds will no longer trigger if person is not in ur party/raid
+	fixed boss done parry haste attack chat filter
+	font size moved to each frame
+
+added:
+	add bubbles only, this will no longer remove message from chat but will not show the chat bubble
+	options to change symbols 
+	spell sound for when spells are ready, you need to track the spell via bars
+	option for perma bars allow/disable moving
+	LDW remove buffs on mc
+	cancel hop for melees 
+	added aura source into FCD
+	cast by self added to sounds
+	added reagents restocker
+	scan for talent for lower hop cd
+	auto repair
+	auto ready check
+	cds add life tap and demo pact
+
+V17
+fixed bugs and changes to existing code:
+	updated/remove some old code that would disable tracking for spells no longer used by this added
+	id for chat filter rsa, Curse of the Elements and phoenixStyle
+	backlash chat filter updated for new backlash from fcd v16
+	disable chat bubbles UBP, Spanish, Innervate was not getting disabled when bubbles was disabled
+	scan for talent for cd time for Shadowfiend and scared shield
+	AbbrevName and Color Names now req all frames to have display name length at 12
+	backlash code changed again
+	2nd backup stop for pp incorrect ooze damage
+	anti spam for stealing bite stops more then 5 messages 
+	changed remove bars for players not in raid
+	fixed spelling mistake on kocks .. knocks
+
+
+added:
+	lib for UFT8 needed for abbvre names
+	chatfilter reporter - prints filtered message in a window
+	class storage info
+	delete month+ old class info
+	Necrotic Plague reporter
+	chat filter raid loot for poor loot, need, pass, greed and de
+	warlock auto delete soul shard, using same code as other addons/macros warning moving items around when deleting shards can result in wrong item being deleting 
+	LDW remove and re-equips weapon
+	say message asking for innervate when your low mana
+	Warrior Weapon Management
+	not cast by me option added to spell sounds
+	chat filter parry hasted attack
+	disable deep scan
+	hide target
+	code for md/tot failed to trigger and remove
+
+V16
+fixed bugs and changes to existing code:
+	reworked/sorted a lot of code
+	check who is lead when raid is changed and not just at start
+	sort/order to sunder names
+	check if reporter option is enabled before rest of the code to help cut down on bloat
+	reworked valk picked up code
+	reworked scan for talents
+	fixed alt right click to remove bars, was just alt any click
+	fixed stealing bite for warrior
+	fixed guarden spirit showing cd for players other than priest
+	fixed link battle chicken in chat
+	fixed bars background not removing when leader has fcd
+	fixed hex
+	increase time for incorrect pp ooze damage
+	split bubbles filter so shekles list does not need to be active
+	split other and reporter
+	changed removal of bars when spec changes
+	talent check for hammer of justice cd
+	perma bars are now only enabled when ur in a party/raid
+	changed backlash code
+	fix backup cd checking for when in party (self only)
+
+added:
+	code to check for left over bars when people leave the raid
+	added alt left click to check who the spell was last used on (self message only)
+	chat filter achievement in raid chat
+	chat filter omen in raid chat
+	chat filter rankwatch
+	remove salv for bql
+	auto icon for valk stacking and frostmourne
+	make bress go on cd when ppl overlap it (shows -DKP as target name)
+	disable some options when bars are locked
+	backup trigger for spells (on warmane combatlog event unfiltered does not trigger sometimes, this backup trigger is limited so target may not be correct)
+	only self has been added to show only ur cds
+	sounds for spells
+	arena mode (disables the check if the player is in your raid/party)
+	paladin remove sm buff
+	color names
+	code to remove old cds no longer supported by this addon
+	clear ignore list
+	abbrev names
+	cds added:
+		Nature's Grasp
+		Hungering Cold
+		Death Pact
+		Cyclone
+		Intimidation
+		Wyvern Sting
+		Scatter Shot
+		Deep Freeze
+		Polymorph
+		Blast Wave
+		Ice Barrier
+		Arcane Power
+		Presence of Mind
+		Dragon's Breath
+		Beacon of Light
+		Mana Burn
+		Sap
+		Shamanistic Rage
+		Fear
+		Howl of Terror
+		Shadowfury
+		Distracting Shot
+		Army of the Dead for tank only cd
+		Blood Tap for tank only cd
+
+V15
+fixed bugs and changes to existing code:
+	sunder reporter will no longer report if there is a warr tank in the raid
+	fixed sorting on spellprio
+	removed md from reset on readiness  and added a + to bar when double md is used
+	change message when clicking bars
+	sunders reporter will no longer work for bpc or pp
+	added code to check if the player was using reporter in frames 2+ and reset that, the player may need to re-enable the reporter in the "Other" tab on the left
+	changed lay out for chat filter 
+	removed some bloat
+	code to remove incorrect ooze damage spam when double ooze
+	stoneform now works
+	moved chat filters to different tab
+	fixed spelling of unknown, i dont know why no one told me about this sooner
+	added code to prevent lua error for scanning talents when players names are unknown 
+	changed prot 4set cd names
+	changed hunt taunt cd name
+	fixed real names for warstomp and stoneform
+	Icebound Fortitude cooldown time has been fixed
+	fixed tank only barkskin spelling mistake so spell now works
+	tank only spell dprot now has 2min cd was 3min
+	added simple code to check cd if player is unholy or paladin tank for cooldowns on army and dprot
+
+added:
+	more chat filters are:
+		details death spam
+		Icons Spam
+		RBS Deaths Spam
+		Spell is ready Spam
+		FCD Messages: Vile Gas, BQL Bite, Incorrect Ooze Damage, Backlash(inc other addons), Whoring(inc other addons), Valk Whoring, RS Dispel, BPC Knocks, 5 sunders
+		smart buff filter
+		flump note this will only filter some stuff
+		PhoenixStyle and EnsidiaFails
+		imp in a ball
+		whispers
+		flasks and food
+		Raeli's (RSA)
+		chat bubbles
+		monster/npc yell bubbles
+		Japanese, Chinese and Korean Bubbles 
+		Japanese, Chinese and Korean in raid chat
+		russian bubbles
+		russian in raid chat
+		WhoTuanted
+		big brother
+		Ress spam
+		LKAnnounceFilter
+		Custom Macro and Weakaurss
+		DBM Announce
+		OptiTaunt
+
+	add spell cd:
+		shield block
+		enrage regen
+		cold snap
+		lightwell
+		Summon Infernal
+		Ritual of Souls
+	reporter for valk stuns (does not inc holy wrath)
+	more racials cds
+	reporter for warlock fail debuff on lk
+	added a raid update timer
+	added reset spells command and button
+
+V14
+fixed bugs and changes to existing code:
+	changed code to stop perma bars from moving around
+	dsac has been added to list of talents to scan for forgot this in last update
+	code to recheck raid if it fails, this is for perma bars -- with delay on update display
+	fixed libs fully addon will now work with zero other addons 
+	ready messages and used message:
+		now works with perma bars
+		anti spam for most cds are in place and if player is not raid leader/assist and when leader has fcd
+		block for unknown players is in place
+	code to scan for talents when in party
+	howls reporter fix for hunters, mages and rogues that would reset and give lua errors
+	delay to raidscan and scan for talents to help fix some perma bars not being added
+	max scale and height  has been increased
+	fixed spell toggle update
+	holy wrath added to whoring for lk phase 1
+	moved chat filter check out of startcooldown and deleted the force check
+	fixed reset when you leave group
+	sorted the gui on in general tab
+	added description to max Text Length
+	changed valk pickup healer code, this needs more work and testing
+	sorted spells by name in config
+	added code to rescan raid if a player is unknown
+
+
+added:
+	button to remove spark
+	added more bars with option to not load them
+	button to remove background
+	button to hide in arena and battlegrounds (hide in pvp)
+	button to change sorting order for none perma bars
+	added sunder to reporter with time
+	added more cds:
+		dispels with 5 sec cds
+		Mortal Strike 
+		Bladestorm
+		Cincussion Blow
+		Sweeping Strikes
+		Cold Blood
+		Shadowstep
+		Shadow Dance
+		Preparation
+		Disarm Trap
+		Distract
+		Retaliation
+		Dancing Tune Weapon
+		Death and Decay
+		Raise Ally
+		Righteous Defense
+ 		Earth Elemental Totem
+ 		Summon Water Elemental
+ 		Curse of Tongues
+		Demonic Emp
+		Summon
+		Fel Domination
+		Feign Death
+		Hunter Pet Taunt
+
+V13
+fixed bugs and changes to existing code:
+	fixed bpc soul frangement remove
+	fixed parry filter for when boss has no target for fcd version
+	changed title to inculde my name
+	changed code to check if newplayers is nil to avoid a lua error
+	fixed spell prio
+
+added:
+	add code for scaning for talents/items to auto add when your in a raid, this will only work for perma bars
+	disable scaning button has been added more info above ^
+	LibTalentQuery and LibGroupTalents libs have been added for scaning talents
+	alt right click to remove bar
+	max lvl only button has been added to stop perma bars from auto adding bars for low lvl players
+	reporter for festergut vile gas showing who is was cast on and who are the extra targets that didnt spread out (does not show who they didnt spread from)
+	reporter for emp flames has been added
+	reporter for when hailon did a successful parry hasted attack
+	reporter for picering holw on lk it will report how many was done after the fight
+	bars for unchained (sindra) note sorting for these bars should be disabled/changed to avoid content moving bars
+	add /fcd enable/disable
+	add /fcd update for updating bars
+
+v12.5
+fixed bugs and changes to existing code:
+	changed libs code this will allow the addon to work on its own and should fix some errors that some people had
+	/fcd will now bring up config window and the config window has been resized
+	the length of posy and posx has been changed and other things have been moved around in the config
+	ready msg self will now work
+	missing code for fonts has been added
+	Multi-Shot code added for lk phase 1 whoring
+	Readiness will now reset the cooldowns of hunters spells
+	the description of items in the other tab has been fixed
+	code to help fix target change on spells
+	code to fix double trigger when spell is used and aura is applied, this was needed for msgused
+	fixed parry filter to block fcd reporter and will no longer blocks your reporting
+	changed order for backlash should fix false reporting when 2 ppl have a lot of stacks and 1 kills the other -- needs testing
+	changed code for bars not showing targets name when your not in party or raid with the target
+	fixed code for item linking when clicking bars
+
+added:
+	hide all frames button this will disable the addon
+	auto cancel soul fragment proc on BPC Kele boss, this will happen when you have 5 or more stacks
+	toggle Spell Availability has been added to turn off zone, dead, offline message in perma bars
+	tank only with a few tank cds
+	middle-click bars to list who has the spells ready
+
+v12
+fixed bugs and changes to existing code:
+	re-enabled player login function for a force check for chat filter and added a welcome message
+	changed DK 4set icon to look same as warrior, this was to make it different from vamp blood icon
+	added anti-spam for cleave for whoring
+	added Vampire Touch to rot and pp oozes, I don't know why this was not added already
+	whoring starting text has been changed to warning to save space
+	fixed code for vile spirit whoring (lod only)
+	test button now works fine no longer giving errors
+	fixed remote reporter, created part was not working
+	added warlock to stealing BQL bite with searing pain
+	added seed to LK whoring for phase 1
+	added bosses target to parry reporter
+	re-added and fixed code for controlling the frame X and Y
+	backlash fix/changes:
+		added death to backlash it was not reporting when ppl die with stacks
+		lowered the time for backlash
+		fixed code that would give error when ppl bubble or ice block and had stacks
+		backlash no longer cuts off the names of ppl who was hit and now says the amount of ppl hit
+
+added:
+	Chat filter for MPR, Fatality, Crybaby, Emblem, Parry, Shambling, Orcish/Common, WarmaneCustomDBM, *** and ###, note this will not block your own message
+	remove priest/paladin shield for boomkins like warriors in v11
+	sound for mana tide
+	glyph of salv for paladin tank cooldown 20% less damage taken, note this only works for in raid and if the tank is geared
+	personal dispels this will print a message saying what u dispelled with a link to the spell. this has anti-spam will not report if spell is the same as last one u dispelled
+	reporter for red ooze melee hit for pp
+	say and sound for Hailon Corporeality
+	outline for text
+	zoom for icons to remove border around icons
+	offline, zone and dead to permanent bars and messages
+	"other" tab has been added and now contans none cd/items like other, report in chat, chat filter, parry reporter and "sound and say". note if you had reporter enable in frames 2+ you may need to disable them before updating to v12
+
+v11
+fixed bugs and changes to existing code:
+	people who fails bite, this was not reporting anything
+	whoring, cleave on rot/bpc 
+	spelling on fish feast spam
+	changed the remote anti spam to work better
+	bug that would bug bars when people used older versions of FCD
+	whoring on LK for less spam on adds when LK is above 73% HP
+	stealing bite to be more accurate for warriors, was doing false reports
+	removed a lot of unnecessary code
+	removed warlock pet dispel in RS its now included in the RS dispel with timer
+	permanent bars should now work better with party/rdf, auto add and removing when people join and leave group
+
+added:
+	reporter for who knocks tanks on bpc
+	RS dispel with timer this include bubble, cloak and iceblock which other addons dont
+	play sound/say message when healer is grabbed by valk
+	who gets hit by backlash and added when people use bubble or ice block
+	anti spam to reporting so you dont need to enable/disable for each raid
+	warriors can auto remove priest shield on phase 1 and 2 at lk for enrage (only works if they are above 70%hp)
+	added parry reporter for hc sindra and hailon
+
+v1 - v10
+added change log
+
+bugfix/changes deeper into the code:
+	changed code to make bugged spells work
+	changed how it finds the icons for spells/items making it show the correct icons for some spells and items
+	fixed permanent bars targets to show correct target
+	fix for pet spells to be tracked - each pet spell needs to be added deeper into the code than normal
+	made tot/md active 2 times to show a more accurate spell is ready
+	removal of items and spec spcific spells in permanent bars when people change specs - works only in raid for now may change later
+	change report cd in raid chat from click to shift click and added shift right click to report whisper
+	updates bars more often this will fix bars moving incorrectly/bugging
+
+added:
+	a ton more items and spells to be tracked
+	categories consumables and report in chat
+
+reporter(prints to self if your not lead/assist):
+	lady spirits
+	backlash
+	Baby Spice on boss or in a boss fight
+	fish spam
+	Direbrew's Remote
+	Ectoplasmic Distiller
+	incorrect damage on oozes - currently works with a timer, may lookinto changing this in different updates
+	whoring/useless damage
+	stealing BQL bite - warr pally dk only for now may add more later
+	who bites who
+	who fails bite
