@@ -1,7 +1,5 @@
 # FatCooldowns (`FCD`)
 
-The original addon was created by Shekles (@shekles_), all credit goes to them for creating such an awesome addon. Thanks so much for all your work. 
-
 Original Fatcooldowns Discord (not mine): https://discord.gg/deVHwh2Jny
 
 ---
