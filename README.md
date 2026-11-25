@@ -1,6 +1,10 @@
 # FatCooldowns (`FCD`)
 
-Original addon created by Shekles. Thanks so much for all your work. 
+The original addon was created by Shekles (@shekles_), all credit goes to them for creating such an awesome addon. Thanks so much for all your work. 
+
+Original Fatcooldowns Discord (not mine): https://discord.gg/deVHwh2Jny
+
+---
 
 **FatCooldowns** is a multi-purpose World of Warcraft addon (WotLK / TBC / Vanilla, built on Ace3) featuring customizable cooldown tracking frames, audio and chat spell reporters, raid leader utilities, loot automation, gear scoring, chat filters, and quality-of-life tools—with dedicated support for Wrath of the Lich King (`3.3.5a`) encounters and mechanics.
 
